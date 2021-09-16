@@ -17,3 +17,16 @@ print(type(12234))
 print(type(1.23))
 print(type(True))
 '''
+#print(bool('a'))
+'''Quando colocamos algo vazio na função bool ele retorna False'''
+#print('Luiz', type('Luiz'), bool('Luiz'))
+
+#print('10', type('10'), type(int('10')))
+
+print("Fabio Leal Schmitz", type("Fabio Leal Schmitz"))
+
+print(26, type(26))
+
+print(1.79, type(1.79))
+
+print(26 > 18, type(26 > 18))
