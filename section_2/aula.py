@@ -217,3 +217,32 @@ else:
 
         
 
+'''
+Formatando valores com modificadores - aula 5
+
+:s
+:d
+:f
+:.(NÚMERO)f
+:(CARACTERE)(> ou < ou ^)(QUANTIDADE)(TIPO - s, d ou f)
+
+> - Esquerda
+< - Direita
+^ - Centro
+'''
+
+'''n1 = 10
+n2 = 3
+divisao = n1 / n2
+print('{:.2f}'.format(divisao))
+
+nome = 'Fabio Leal'
+
+print(f'{nome:.4s}')
+'''
+n1 = 1
+n2 = 123881
+
+print(f'{n1:0^3}')
+print(f'{n2:0<7}')
+print(f'{n2:0>10.7f}')
