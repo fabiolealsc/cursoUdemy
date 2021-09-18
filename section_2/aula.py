@@ -203,4 +203,17 @@ qtd_char = len(user)'''
     print('O user tenq ser maior q 6')
 else:
     print('Foi cadastrado!')'''  
+'''
+n1 = input('Digite um número: ')
+n2 = input('Digite outro número: ')
+
+if n1.isnumeric():
+    n1 = int(n1)
+if n2.isnumeric():
+    n2 = int(n2)
+
+else:
+    print('n')'''
+
+        
 
