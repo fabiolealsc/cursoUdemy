@@ -240,9 +240,41 @@ nome = 'Fabio Leal'
 
 print(f'{nome:.4s}')
 '''
-n1 = 1
+'''n1 = 1
 n2 = 123881
 
 print(f'{n1:0^3}')
 print(f'{n2:0<7}')
-print(f'{n2:0>10.7f}')
+print(f'{n2:0>10.7f}')'''
+'''txt  = 'Python s2'
+
+nova_str = txt[:6]
+print(nova_str)'''
+'''
+while em python
+'''
+'''while True:
+    nome = input('Qual seu nome? ')
+    print(f'Olá {nome}')
+
+print('Não')'''
+
+'''x=0
+while x <= 5:
+    if x == 3:
+        x += 1
+        continue
+    if x == 4:
+        break
+    print(x)
+    x += 1
+print('Acabou')'''
+
+x =  0
+
+while x < 5:
+    y = 0
+    while y < 5:
+        print(f'x vale {x} e y vale {y}')
+        y += 1
+    x += 1
