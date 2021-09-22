@@ -331,6 +331,22 @@ Função range(start=0, stop, step=1)
 
 for c, l in enumerate(txt):
     print(c, l)'''
-
-for n in range(0, 10, 2):
-    print(n)
+'''
+for n in range(32, 0, -2):
+    print(n)'''
+'''for n in range(100):
+    if n % 8 == 0:
+        print(n)'''
+# continue - pula pra proxima iteração
+# break - quebra o laço
+'''
+txt = 'Python'
+nov = ''
+for l in txt:
+    if l == 't':
+        nov += l.upper()
+    elif l == 'h':
+        nov += l.upper()
+    else:
+        nov += l
+print(nov)'''
