@@ -270,11 +270,67 @@ while x <= 5:
     x += 1
 print('Acabou')'''
 
-x =  0
+'''x =  0
 
 while x < 5:
     y = 0
     while y < 5:
         print(f'x vale {x} e y vale {y}')
         y += 1
-    x += 1
+    x += 1'''
+
+'''while True:
+    print()
+    n1 = input('Digite um número: ')
+    n2 = input('Digite outro número: ')
+    oper = input('Digite um operador: ')
+
+    if not n1.isnumeric() or not n2.isnumeric():
+        print('Valor inválido digite um número!')
+        continue
+
+    n1 = int(n1)
+    n2 = int(n2)
+
+    if oper == '+':
+        print(n1 + n2)
+    elif oper == '-':
+        print(n1 - n2)
+    elif oper == '*':
+        print(n1 * n2)
+    elif oper == '/':
+        print(n1/n2)
+    else:
+        print('Operador inválido!')
+'''
+# interando strings
+'''
+frase = 'O rato roeu a roupa do rei de roma' # Iterável
+tam_fra = len(frase)
+new = ''
+
+c = 0
+
+input_du = input('Qual letra deseja colocar maiúscula: ')
+
+while c < tam_fra:
+    #print(frase[c], c)
+    let = frase[c]
+    if let == input_du:
+        new +=input_du.upper()
+    else:
+        new += frase[c]
+    c += 1
+    print(new)'''
+'''
+FOr in em Python
+Iterando strings com for
+Função range(start=0, stop, step=1)
+'''
+'''txt = 'Python'
+
+for c, l in enumerate(txt):
+    print(c, l)'''
+
+for n in range(0, 10, 2):
+    print(n)
