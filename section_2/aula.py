@@ -464,3 +464,41 @@ for v in lista:
         p = v
 
 print(f'A palavra que apareceu mais vezes é {p} ({cont}x).')'''
+'''string = 'O Brasil é penta.'
+l = string.split(' ')
+for v, p in enumerate(l):
+    print(v, p, l[v])'''
+'''l2 = '_'.join(l)
+print(l)
+print(l2)'''
+
+'''l = [
+    [1,'Luiz'],
+    [2,'João'],
+    [3,'Maria'],
+    ]'''
+'''l = [
+    ['Luiz', 'João', 'Maria'],
+    ['Pedro', 'Santos', 'Tomas'],
+    ['Lopes', 'Concatto', 'Merli']
+]
+
+enumerada = list(enumerate(l))'''
+#print(enumerada[0][1][1]) # João
+
+#print(list(enumerada))
+#for id, nom in enumerate(l):
+    #print(id, nom)
+'''n1, n2, n3 = l
+print(n1)'''
+
+'''for v in enumerate(l, 53):
+    ve, ml = v
+    n1, n2, n3 = ml
+    #print(ve, ml)
+    print(n1, n2, n3, sep=', ', end=', ')'''
+
+l = ['Luiz', 'João', 'Maria', 'José']
+n1, n2, *outl = l
+print(n1, n2)
+print(outl)
