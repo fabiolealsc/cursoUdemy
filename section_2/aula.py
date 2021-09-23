@@ -498,7 +498,17 @@ print(n1)'''
     #print(ve, ml)
     print(n1, n2, n3, sep=', ', end=', ')'''
 
-l = ['Luiz', 'João', 'Maria', 'José']
-n1, n2, *outl = l
-print(n1, n2)
-print(outl)
+'''l = ['Luiz', 'João', 'Maria', 'José',1,1,1,2,3,1,4,1,4,12,5125,16,4,5435,3,523,452,345,45]
+#n1, n2, n3, *outl, v1 = l
+#*outl, n1, n2 = l
+n1, n2, *_ = l
+print(n1, n2)'''
+
+'''x = 10
+y = 'Luiz'
+z = 'Meu'
+
+print(x, y, z)
+x, y, z = z, x, y
+print(x, y, z)
+'''
