@@ -419,3 +419,23 @@ while True:
     else:
         print(f'Você ja chutou: {sect}')
         print()'''
+
+'''
+For/Else em python - continue break
+'''
+'''
+variavel = ['Luiz', 'João', 'Maria', 'Manteiga', 'maizena']
+
+c = 0
+for v in variavel:
+    if v.lower().startswith('m'):
+        com_com_m = True
+        print('Começa com M', v)
+        c += 1
+    else:
+        print('Não começa com M', v)
+    
+if c>0:
+    print(f'Existe {c} palavra com M')
+else:
+    print('Não existe palavra que começa com M')'''
