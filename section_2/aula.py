@@ -421,7 +421,7 @@ while True:
         print()'''
 
 '''
-For/Else em python - continue break
+For/Else em python - continue break else
 '''
 '''
 variavel = ['Luiz', 'João', 'Maria', 'Manteiga', 'maizena']
@@ -439,3 +439,28 @@ if c>0:
     print(f'Existe {c} palavra com M')
 else:
     print('Não existe palavra que começa com M')'''
+
+'''
+Split, Join, Enumerate em Python
+*Split - Dividir uma str
+*Join - Juntar uma lista
+*Enumerate - Enumerar elementos da lista
+'''
+
+'''st = "O Brasil é o pais do Futebol, o Brasil é Pentacampeão"
+lista = st.split(' ')
+lista2 = st.split(',')
+print(lista)
+print(lista2)
+
+p = ''
+cont = 0
+
+for v in lista:
+    c = lista.count(v)
+    #print(f'A palavra "{v}" apareceu {lista.count(v)}x na frase.')
+    if c > cont:
+        cont = c
+        p = v
+
+print(f'A palavra que apareceu mais vezes é {p} ({cont}x).')'''
