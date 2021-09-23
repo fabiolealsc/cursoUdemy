@@ -350,3 +350,72 @@ for l in txt:
     else:
         nov += l
 print(nov)'''
+#         0   1   2    3        4    5
+'''
+lista = [1, 3332, 5, 'Pedro', True, 3.3]
+#   -    5    4   3     2       1    0
+print(lista[::-1])
+lista.append('g')
+print(lista)'''
+'''
+l1 = [1,2,3,4]
+l2 = [5,6,7,8]
+#l1.pop()
+#l2.insert(0, 'cracha')
+#l1.append('b')
+#l1.extend(l2)
+#l3 = l1 + l2
+#print(l3)
+print(l1)
+print(l2)'''
+
+''''l1 = [1,2,3,4]
+l2 = [5,6,7,8]
+
+soma = 0
+for n in l1:
+    soma += n
+
+print(soma)'''
+'''
+li = ['Fabio', 34, 9.0, True]
+
+for e in li:
+    print(f'O tipo do {e} é {type(e)}')'''
+
+'''
+secreto = 'perfume'
+dig = []
+c = 2
+while True:
+    if c < 0:
+        print('Você PERDEU!')
+        break
+    print(f'Você tem {c+1} chances')
+    l = input('Digite um letra: ')
+    
+    if len(l) > 1:
+        print('Não vale digitar mais letras')
+        continue
+    dig.append(l)
+    
+    if l in secreto:
+        print('Boa, a letra está na palavra secreta!')
+    else:
+        print('Vish, essa letra não está na palavra secreta!')
+        c -= 1
+        dig.pop()
+    
+    sect = ''
+    for ls in secreto:
+        if ls in dig:
+            sect += ls
+        else:
+            sect += '*'
+    
+    if sect == secreto:
+        print('Legal Você Ganhou')
+        break
+    else:
+        print(f'Você ja chutou: {sect}')
+        print()'''
