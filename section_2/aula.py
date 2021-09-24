@@ -511,4 +511,9 @@ z = 'Meu'
 print(x, y, z)
 x, y, z = z, x, y
 print(x, y, z)
-'''
+''''''
+cpf = '234.5342.-53'
+cpf = cpf.split('.-')
+
+print(cpf)
+for n in enumerate(cpf, 10):'''
