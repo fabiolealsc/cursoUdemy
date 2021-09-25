@@ -94,9 +94,32 @@ Exercício 4
     return n
 
 print(func(4))'''
-#sempre que definir um padrão para um argumento os proximos argumentos tenque ser definidos padroes
+'''#sempre que definir um padrão para um argumento os proximos argumentos tenque ser definidos padroes
 def func(n1,n2,n3,n4,n5,n6=None, n7=None):
     print(n1,n2,n3,n4,n5, n6, n7)
 
 # se chamar um argumento passando um valor a ele, os proximos argumento tenque ser passados.
-func(1,2,3,4,5, n6='Pedro', n7=5)
+func(1,2,3,4,5, n6='Pedro', n7=5)'''
+def func(*args, **kwargs):
+    print(args)
+    print(kwargs['idade'])
+    '''
+    print(args)
+    print(args[0])
+    print(args[-1])
+    print(len(args))
+    ''''''
+    args = list(args)
+    args[0] = 20
+    print(args)
+''''''
+    for v in args:
+        print(v)'''
+
+lista2 = [23,12,23,54,6,6,80]
+lista = [1,2,3,4,5]
+func(*lista, *lista2, nome='Fabio', idade=26)
+
+#lista = [1,2,3,4,5]
+# desenpacotando
+#print(*lista)
