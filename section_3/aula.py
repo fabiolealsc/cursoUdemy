@@ -100,26 +100,67 @@ def func(n1,n2,n3,n4,n5,n6=None, n7=None):
 
 # se chamar um argumento passando um valor a ele, os proximos argumento tenque ser passados.
 func(1,2,3,4,5, n6='Pedro', n7=5)'''
+'''
 def func(*args, **kwargs):
     print(args)
     print(kwargs['idade'])
-    '''
+   
     print(args)
     print(args[0])
     print(args[-1])
     print(len(args))
-    ''''''
+    
     args = list(args)
     args[0] = 20
     print(args)
-''''''
-    for v in args:
-        print(v)'''
 
-lista2 = [23,12,23,54,6,6,80]
+for v in args:
+        print(v)
+    
+'''
+
+
+'''lista2 = [23,12,23,54,6,6,80]
 lista = [1,2,3,4,5]
 func(*lista, *lista2, nome='Fabio', idade=26)
-
+'''
 #lista = [1,2,3,4,5]
 # desenpacotando
 #print(*lista)
+'''
+Escopo global e local
+'''
+'''def func():
+    print(variavel)
+
+def func2(arg=None):
+    #global variavel
+    arg = arg.replace('v', 'c')
+    return arg
+
+func()
+outraVariavel = func2(arg=variavel)
+print(outraVariavel)
+'''
+'''def func():
+    #print(variavel)
+    outraVariavel = 'Valor2'
+    variavel = 1234
+    print(variavel)
+    return outraVariavel
+
+def func2(arg):
+    print(arg)
+
+var=func()
+func2(var)'''
+
+def olaMundo():
+    return 'Olá Mundo!'
+
+def mestre(func):
+    return func()
+
+exe = mestre(olaMundo)
+
+print(exe)
