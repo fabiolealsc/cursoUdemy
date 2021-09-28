@@ -155,12 +155,52 @@ def func2(arg):
 var=func()
 func2(var)'''
 
-def olaMundo():
+'''def olaMundo():
     return 'Olá Mundo!'
 
 def mestre(func):
     return func()
 
-exe = mestre(olaMundo)
+exe = mestre(olaMundo)'''
+'''
+def mestre(func, *args, **kwargs):
+    return func(*args, **kwargs)
 
-print(exe)
+def falaOi(nome):
+    return f'Oi {nome}'
+
+def sauda(nome, saud):
+    return f'{saud} {nome}'
+
+exe = mestre(sauda, 'Luiz', saud='olá')
+print(exe)'''
+
+'''def func(arg, arg2):
+    return arg * arg2
+
+var = func(2,2)
+print(var)'''
+
+#a = lambda x, y: x * y
+#print(a(2,2))
+
+'''li = [
+['P1', 13],
+['P2', 6],
+['P3', 4],
+['P4', 59],
+['P5', 9],
+]
+#li.sort(key=lambda item: item[0], reverse=True)
+print(sorted(li, key=lambda i:i[1], reverse=True))
+print(li)'''
+
+t1 = 1,2,3,4,5,'a', 'Fabio'
+t2 = 2,
+t3 = t1 + t2
+n1,n2,n3, *_, nom = t3
+print(t1[0:4], type(t1))
+print(t2, type(t2))
+print(t3)
+print(n3)
+print(nom)
