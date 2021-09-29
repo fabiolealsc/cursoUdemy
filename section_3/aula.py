@@ -195,7 +195,7 @@ print(var)'''
 print(sorted(li, key=lambda i:i[1], reverse=True))
 print(li)'''
 
-t1 = 1,2,3,4,5,'a', 'Fabio'
+'''t1 = 1,2,3,4,5,'a', 'Fabio'
 t2 = 2,
 t3 = t1 + t2
 n1,n2,n3, *_, nom = t3
@@ -203,4 +203,11 @@ print(t1[0:4], type(t1))
 print(t2, type(t2))
 print(t3)
 print(n3)
-print(nom)
+print(nom)'''
+'''
+t1 = (1,2,3,4,5,6)
+t1 = list(t1)
+t1[1] = 1000
+t1 = tuple(t1)
+print(t1)
+'''
