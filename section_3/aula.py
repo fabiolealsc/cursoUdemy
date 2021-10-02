@@ -237,10 +237,10 @@ for cp, cr in perguntas.items():
         print('Errouuu!')    
     print()
 print(f'Você acertou {resp_certo} perguntas')'''
-
+'''
 set1 = {1,2,3,4,5,6}
 set1.update((1,2,3,4,4,(213,34,34)))
 set1.update('Python')
 set1.add(4)
 for v in set1:
-    print(v)
+    print(v)'''
