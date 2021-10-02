@@ -211,3 +211,36 @@ t1[1] = 1000
 t1 = tuple(t1)
 print(t1)
 '''
+'''perguntas = {
+    'Pergunta 1':{
+        'pergunta': 'Quando é 2+2?',
+        'respostas': {'a':'1','b':'6','c':'4','d':'5',},
+        'resposta_certa':'c',
+    },
+    'Pergunta 2':{
+        'pergunta': 'Quando é 25+2?',
+        'respostas': {'a':'27','b':'29','c':'30','d':'23',},
+        'resposta_certa':'a',
+    },
+}
+resp_certo = 0
+for cp, cr in perguntas.items():
+    print(f'{cp}: {cr["pergunta"]}')
+    print('Resposta: ')
+    for rr, rv in cr['respostas'].items():
+        print(f'[{rr}]: {rv}')
+    resp = input('Sua resposta: ')
+    if resp == cr['resposta_certa']:
+        print('Acertou á mizeravel')
+        resp_certo += 1
+    else:
+        print('Errouuu!')    
+    print()
+print(f'Você acertou {resp_certo} perguntas')'''
+
+set1 = {1,2,3,4,5,6}
+set1.update((1,2,3,4,4,(213,34,34)))
+set1.update('Python')
+set1.add(4)
+for v in set1:
+    print(v)
