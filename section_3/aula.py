@@ -289,4 +289,10 @@ ex6 = [v for v in l3 if v % 3 == 0 if v % 8 == 0]
 print(ex6)
 ex7 = [v if v % 3 == 0 and v % 8 == 0 else "#" for v in l3]
 print(ex7)'''
-
+'''
+string = '012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789'
+lista = [string[i:i+10] for i in range(0, len(string), 10)]
+retorno = '.'.join(lista)
+print(lista)
+print(retorno)
+'''
