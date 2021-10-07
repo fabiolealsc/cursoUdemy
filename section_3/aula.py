@@ -296,3 +296,28 @@ retorno = '.'.join(lista)
 print(lista)
 print(retorno)
 '''
+'''l1 = [1,2,3,4,5]
+l2 = [v*2 for v in l1]
+print(l2)''''''
+lista = [
+    ('chave', 'valor'),
+    ('chave2', 'valor2'),
+]
+d1 = {f'chave_{x}': x**2 for x in range(5)}
+#d1 = dict(lista)
+print(d1)'''
+
+import sys
+import time
+def gera():
+    variavel  = 'valor1'
+    yield variavel
+    variavel  = 'valor2'
+    yield variavel
+    variavel  = 'valor3'
+    yield variavel
+
+g = gera()
+
+for v in g:
+    print(g)
