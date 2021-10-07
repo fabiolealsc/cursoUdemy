@@ -307,7 +307,7 @@ d1 = {f'chave_{x}': x**2 for x in range(5)}
 #d1 = dict(lista)
 print(d1)'''
 
-import sys
+'''import sys
 import time
 def gera():
     variavel  = 'valor1'
@@ -320,4 +320,12 @@ def gera():
 g = gera()
 
 for v in g:
-    print(g)
+    print(g)'''
+'''import sys
+
+l1 = [x for x in range(1000000)]
+l2 = (x for x in range(1000000))
+for v in l2:
+    print(v)'''
+# lists, tuples, str - sequences - iterável
+nome = 'Luiz Otávio'
