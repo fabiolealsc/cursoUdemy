@@ -329,3 +329,4 @@ for v in l2:
     print(v)'''
 # lists, tuples, str - sequences - iterável
 nome = 'Luiz Otávio'
+#itr = iter(nome)
