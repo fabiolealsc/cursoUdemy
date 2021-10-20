@@ -344,13 +344,57 @@ print(total)'''
 Zip - Unindo iteráveis
 Zip_longest - Itertools
 '''
+'''from itertools import zip_longest, count
 
 #código
+
+ind = count()
+
 cidade = ['São Paulo', 'Belo Horizonte', 'Salvador', 'Monte Belo']
 
 estados = ['SP', 'MG', 'BA']
 
-cidades_estados = zip(estados, cidade)
+cidades_estados = zip(
+    ind,
+    estados,
+    cidade,
+    
+)
 
-lista = list(cidades_estados)
-print(lista)
+for ind, est, cid in cidades_estados:
+    print(ind, est, cid)
+'''
+'''list_a = [1,2,3,4,5,6,7,8]
+list_b = [1,2,3,4]
+
+print([x+y for x,y in list(zip(list_a, list_b))])'''
+
+'''
+count - Itertools
+'''
+'''from itertools import count
+'''
+#contador = count(start=20, step=-0.5)
+'''
+for i in contador:
+    print(round(i, 2))
+    if (i<-20):
+        break'''
+'''
+lista = ['Luiz', 'Maria', 'Pedro', 'João']
+cont = count(start=0,step=10)
+
+lista = zip(cont, lista)
+print(list(lista))'''
+
+from itertools import combinations, permutations, product, repeat
+
+#pessoas =['Luiz', 'Pedro', 'Augusto', 'Melani', 'Maria', 'Gustavo', 'Pereira']
+n = [0,1]
+h = [0,1,2,3,4,5,6,7,8,9,'a','b','c','d','f']
+t = [t for t in product(h, repeat=3)]
+c = 0
+for grupo in product(n, repeat=8):
+    print(f'{grupo} = {c} = {t[c]}')
+    c += 1
+
