@@ -328,5 +328,29 @@ l2 = (x for x in range(1000000))
 for v in l2:
     print(v)'''
 # lists, tuples, str - sequences - iterável
-nome = 'Luiz Otávio'
+#nome = 'Luiz Otávio'
 #itr = iter(nome)
+
+'''carrinho = []
+
+carrinho.append(("produto_1", 30))
+carrinho.append(("produto_2", 20))
+carrinho.append(("produto_3", 13))
+
+
+total = sum([float(x) for t,x in carrinho])
+print(total)'''
+'''
+Zip - Unindo iteráveis
+Zip_longest - Itertools
+'''
+
+#código
+cidade = ['São Paulo', 'Belo Horizonte', 'Salvador', 'Monte Belo']
+
+estados = ['SP', 'MG', 'BA']
+
+cidades_estados = zip(estados, cidade)
+
+lista = list(cidades_estados)
+print(lista)
